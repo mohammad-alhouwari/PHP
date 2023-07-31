@@ -120,7 +120,14 @@ if ($num>=18) {
 <!-- Q10	Write php script  to check whether a number is positive, negative or zero -->
 <?php
 echo"<br><br>--------------Q10--------------<br><br>";
-
+$num=-60;
+if ($num>0) {
+    echo"positive";
+}else if ($num<0){
+    echo"negative";
+}else{
+    echo"zero";
+}
 
 
 ?>
