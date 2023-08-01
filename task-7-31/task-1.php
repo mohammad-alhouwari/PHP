@@ -134,15 +134,41 @@ if ($num>0) {
 <!-- Q11	Write php script to make a calculator, the calculator should contain the four main operations  -->
 <?php
 echo"<br><br>--------------Q11--------------<br><br>";
-
+$num1=6;
+$num2=3;
+echo $num1+$num2;
+echo"<br>";
+echo $num1-$num2;
+echo"<br>";
+echo $num1/$num2;
+echo"<br>";
+echo $num1*$num2;
 
 
 ?>
-<!--  -->
+<!-- Q12	Write a PHP to find the grade for the student, after calculating the average of his score in all the subject   -->
 <?php
 echo"<br><br>--------------Q12--------------<br><br>";
-
+$grades = [60, 86, 95, 63, 55, 74, 79, 62, 50];
+$sum = array_sum($grades);
+$score = $sum / count($grades);
+switch ($score) {
+    case $score < 60:
+        echo "F" . "<br>";
+        break;
+    case $score >= 60 && $score < 70:
+        echo "D" . "<br>";
+        break;
+    case $score >= 70 && $score < 80:
+        echo "C" . "<br>";
+        break;
+    case $score >= 80 && $score < 90:
+        echo "B" . "<br>";
+        break;
+    case $score >= 90 && $score <= 100:
+        echo "A" . "<br>";
+        break;
+}
 
 
 ?>
-<!--  -->
