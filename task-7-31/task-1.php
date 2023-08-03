@@ -136,6 +136,7 @@ if ($num>0) {
 echo"<br><br>--------------Q11--------------<br><br>";
 $num1=6;
 $num2=3;
+
 echo $num1+$num2;
 echo"<br>";
 echo $num1-$num2;
