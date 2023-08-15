@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <style>
+        #main{
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: aqua;
+        }
+        #input_div{
+            width: 70%;
+        }
+        #add_task{
+            width: 75%;
+            display: inline-block;
+        }
+        #btn_add{
+            width: 20%;
+            display: inline-block;
+        }
+
+        #myUL1, #myUL2 {
+      list-style-type: none;
+      padding: 0;
+     margin: 0;
+     width: 290px;
+     }     
+
+     li span{
+        display: inline-block;
+        width: 56%;
+     } 
+
+    </style>
+</head>
+<body>
+<div id="main">
+    
+<h1>To_Do List</h1>
+<div id="input_div">
+<input type="text" id="add_task" placeholder="Enter task description">
+<button id="btn_add" onclick="add_task_btn()">Add</button>
+
+<input type="text" id="Search" onkeyup="myFunction()" placeholder="Search Tasks" >
+</div> 
+<br>
+<ul id="myUL1" onclick="btn_go(event)"></ul>
+<ul id="myUL2" onclick="btn_go(event)"></ul>
+
+</div>
+    <script src="task1.js"></script>
+</body>
+</html>
